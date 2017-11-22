@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+
+  <!-- Map -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+  </style>
+
+  <title>It Happened Here | Home</title>
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="child">
+      <h1 id="header"> BLACK PEOPLE YELP </h1>
+      <h3 id="sub-header"> A map documenting racism in our lives. </h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12" id="btn-map">
+        <a id="btn-map-link" href="map.html" class="btn btn-lg btn-block" role="button" aria-pressed="true" >See the Map</a>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12" id="btn-story">
+        <button id="btn-story-link" type="button" class="button btn btn-lg btn-block" role="button" aria-pressed="true"  onclick="getLocation()" >Tell Your Story</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TUTORIALS
+    <p id="demo"></p>
+    <pre id="object"></pre>
+    <ul id="list"></ul> -->
+
+
+  <!-- SCRIPTS -->
+  <!-- ******************************************************************* -->
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+  <script src="scripts/fb.js" charset="utf-8"></script>
+
+  <!-- Location -->
+  <script src="scripts/geo.js" charset="utf-8"></script>
+
+  <!-- Style -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

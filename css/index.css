@@ -1,0 +1,153 @@
+/*----------------------------------------------------------------------------*/
+/* COLOR SCHEME */
+/*----------------------------------------------------------------------------*/
+
+
+/*
+  green  : #1B998B;
+  pink   : #ED217C;
+  dark   : #2D3047;
+  yellow : #FFFD82;
+  orange : #FF9B71;
+  black  : #0A0908;
+  white  : #F2F4F3;
+*/
+
+
+/*----------------------------------------------------------------------------*/
+/*GENERAL*/
+/*----------------------------------------------------------------------------*/
+
+body {
+  background-color: #0A0908;
+}
+
+#header{
+  font-size: 10vw;
+  font-family: 'Oswald', sans-serif;
+  color: #FFFD82;
+}
+
+#sub-header{
+  font-size: 2vw;
+  font-family: 'Saira Condensed', sans-serif;
+  color  : #ED217C;
+}
+
+.parent {
+  position: relative;
+  height: 65vh;
+  width: 100%;
+}
+
+.child {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col{
+  color: white;
+}
+
+.button, #btn-map a:visited, #btn-map a:active, #btn-map a:link{
+  font-family: 'Saira Condensed', sans-serif;
+  background-color: #1B998B;
+  color: #FFFD82;
+  border-radius: 0.5em;
+}
+
+#btn-map a:hover, #btn-story-link:hover {
+  background-color : #ED217C;
+}
+
+.col{
+  padding-top: 1vh; padding-bottom: 1vh;
+}
+
+#map{
+  color: #713558;
+}
+
+/*----------------------------------------------------------------------------*/
+/* iPHONE */
+/* Custom, iPhone Retina */
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+  #header{
+    text-align: center;
+  }
+  #sub-header{
+    font-size: 6vw;
+    text-align: center;
+  }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* X-SMALL */
+/* Extra Small Devices, Phones */
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 480px) {
+  #header{
+    text-align: center;
+  }
+  #sub-header{
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* SMALL */
+/* Small Devices, Tablets */
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  #header{
+    text-align: center;
+  }
+  #sub-header{
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* MEDIUM */
+/* Medium Devices, Desktops */
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 992px) {
+  #header{
+    text-align: center;
+  }
+  #sub-header{
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* LARGE */
+/* Large Devices, Wide Screens */
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+  #header{
+    text-align: center;
+
+  }
+
+  #sub-header{
+    font-size: 4vw;
+    text-align: center;
+  }
+}
