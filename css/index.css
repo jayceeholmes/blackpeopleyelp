@@ -13,6 +13,17 @@
   white  : #F2F4F3;
 */
 
+/*
+red    : #ED254E;
+tea    : #C2EABD;
+yellow : #FFFD82;
+navy   : #011936;
+grey   : #465362;
+magenta: #5F0F40;
+black  : #0A0908;
+white  : #F2F4F3;
+*/
+
 
 /*----------------------------------------------------------------------------*/
 /*GENERAL*/
@@ -25,13 +36,15 @@ body {
 #header{
   font-size: 10vw;
   font-family: 'Oswald', sans-serif;
-  color: #FFFD82;
+  color: #F2F4F3;
+  text-align: center;
 }
 
 #sub-header{
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Saira Condensed', sans-serif;
-  color  : #ED217C;
+  color  : #F2F4F3;
+  text-align: center;
 }
 
 .parent {
@@ -54,13 +67,13 @@ body {
 
 .button, #btn-map a:visited, #btn-map a:active, #btn-map a:link{
   font-family: 'Saira Condensed', sans-serif;
-  background-color: #1B998B;
-  color: #FFFD82;
+  background-color: #F2F4F3;
+  color: #0A0908;
   border-radius: 0.5em;
 }
 
 #btn-map a:hover, #btn-story-link:hover {
-  background-color : #ED217C;
+  background-color : #FFFD82;
 }
 
 .col{
@@ -77,13 +90,6 @@ body {
 /*----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 0px) {
-  #header{
-    text-align: center;
-  }
-  #sub-header{
-    font-size: 6vw;
-    text-align: center;
-  }
 }
 
 
@@ -93,13 +99,6 @@ body {
 /*----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 480px) {
-  #header{
-    text-align: center;
-  }
-  #sub-header{
-    font-size: 4vw;
-    text-align: center;
-  }
 }
 
 
@@ -109,13 +108,6 @@ body {
 /*----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
-  #header{
-    text-align: center;
-  }
-  #sub-header{
-    font-size: 4vw;
-    text-align: center;
-  }
 }
 
 
@@ -125,13 +117,6 @@ body {
 /*----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 992px) {
-  #header{
-    text-align: center;
-  }
-  #sub-header{
-    font-size: 4vw;
-    text-align: center;
-  }
 }
 
 
@@ -141,13 +126,4 @@ body {
 /*----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1200px) {
-  #header{
-    text-align: center;
-
-  }
-
-  #sub-header{
-    font-size: 4vw;
-    text-align: center;
-  }
 }
