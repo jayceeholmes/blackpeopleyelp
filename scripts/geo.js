@@ -26,9 +26,10 @@ function getData(position) {
     // PUSH DATA
     pushData(position.coords.latitude, position.coords.longitude, position.timestamp);
     console.log(position.coords.latitude, position.coords.longitude, position.timestamp);
+    document.getElementById("thank-you").innerHTML= "Thank you. The GPS location where this racist bullshit happened has been recorded.";
 
     // SHOW DATA
-    
+
 }
 
 // SHOW ERROR

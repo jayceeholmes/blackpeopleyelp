@@ -42,9 +42,18 @@ body {
 
 #sub-header{
   font-size: 3vw;
-  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color  : #F2F4F3;
+  text-align: right;
+  padding-right: 10vw;
+
+}
+
+#thank-you{
+  color: #F2F4F3;
   text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .parent {
@@ -66,14 +75,15 @@ body {
 }
 
 .button, #btn-map a:visited, #btn-map a:active, #btn-map a:link{
-  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #F2F4F3;
   color: #0A0908;
   border-radius: 0.5em;
 }
 
 #btn-map a:hover, #btn-story-link:hover {
-  background-color : #FFFD82;
+  background-color : #5F0F40;
+  color: #F2F4F3;
 }
 
 .col{
