@@ -13,11 +13,16 @@ var canvas;
 // Create a new Mappa instance using Leaflet.
 var mappa = new Mappa('Mapboxgl', key);
 
+// array
+var positionsx = [];
+var positionsy = [];
+var ping;
+
 // Lets put all our map options in a single object
 var options = {
   lat: 40.730042,
   lng: -73.993964,
-  zoom: 12,
+  zoom: 3,
   style: 'mapbox://styles/jayceeholmes/cj9vhztp44udf2sp7i6yjr91z',
 }
 
@@ -33,10 +38,45 @@ function setup(){
   // Overlay the tilemap on top of the canvas
   myMap.overlay(canvas);
 
-  
+  // Retrieve Data From Database
+  const dbRefObject = firebase.database().ref().child('pings/racism');
 
+  dbRefObject.once("value", function(data) {
+
+    var locations = data.val();
+    var keys = Object.keys(locations);
+
+    for (var i = 0; i < keys.length; i++) {
+      var k = keys[i];
+      var px = locations[k].gpsx;
+      var py = locations[k].gpsy;
+
+      positionsx.push(px);
+      positionsy.push(py);
+
+      console.log(positionsx);
+
+      ping = myMap.latLngToPixel(px, py);
+      color(0,0,255);
+      ellipse(ping.x, ping.y, 20, 20);
+
+    }
+  });
+
+  // On Change, Draw Point
+  myMap.onChange(drawPoint);
 }
 
-// p5.js draw
 function draw(){
+  // nothing
+}
+
+
+function drawPoint(){
+  clear();
+  for (var i = 0; i < positionsx.length; i++) {
+    ping = myMap.latLngToPixel(positionsx[i], positionsy[i]);
+    color(0,0,255);
+    ellipse(ping.x, ping.y, 20, 20);
+  }
 }
